@@ -2,11 +2,11 @@
 
 $(function(){
   
-  $(".trigger_spinner_small").on("click", function(){
+  $("#kg_dashboard_content .trigger_spinner_small").on("click", function(){
     $(this).closest("p").children(".spinner_small").css("display", "inline-block");
   });
   
-  $("[data-title]").hover(function(){
+  $("#kg_dashboard_left_icon_menu [data-title]").hover(function(){
     var parent_li = $(this).parent();
     if(!parent_li.hasClass("active") && !parent_li.hasClass("disable"))
     {

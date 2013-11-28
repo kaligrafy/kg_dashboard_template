@@ -18,9 +18,11 @@ Or install it yourself as:
 
 ## Usage
 
-Add this line to your layout view file (please note that kg_dashboard_template includes an undo html css stylesheet):
+Add these lines to your layout view file (please note that kg_dashboard_template automatically includes a css undo html stylesheet):
 
 	<%= stylesheet_link_tag "kg_dashboard_template", :media => "all" %>
+	<%= javascript_include_tag "kg_dashboard_template" %>
+  
 
 Add this block to your project sass (.css.scss) file:
 

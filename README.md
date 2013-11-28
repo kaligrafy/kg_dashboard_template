@@ -24,10 +24,10 @@ Add this line to your layout view file (please note that kg_dashboard_template i
 
 Add this block to your project sass (.css.scss) file:
 
-	$dashboard_icons: ( section1, section2, section3... );
-	@each $icon in $dashboard_icons {
+	$kg_dashboard_icons: ( section1, section2, section3... );
+	@each $icon in $kg_dashboard_icons {
 	  $name:     nth($icon, 1);
-	  #dashboard_left_icon_menu li.#{$name}, #dashboard_content .main_section_title .main_section_title_icon.#{$name} { background-image: url(image_path("/assets/kg_dashboard_template/icons/#{$name}.png")); }
+	  #kg_dashboard_left_icon_menu li.#{$name}, #kg_dashboard_content .main_section_title .main_section_title_icon.#{$name} { background-image: url(image_path("/assets/kg_dashboard_template/icons/#{$name}.png")); }
 	}
 
 Replace "section1, section2, section3..." with your section shortnames (you must provide png white transparent icons with the same name in your local assets directory like this: /assets/kg_dashboard_template/icons/

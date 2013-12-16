@@ -26,12 +26,12 @@ $(function(){
   });
  
   $.kg.dashboard.show_left_widgets = function(){
-    $("kg_dashboard_content").css("margin-left", 300);
-    $("kg_dashboard_left_widgets_container").show();
+    $("#kg_dashboard_content").css("margin-left", 300);
+    $("#kg_dashboard_left_widgets_container").show();
   }
   $.kg.dashboard.hide_left_widgets = function(){
-    $("kg_dashboard_content").css("margin-left", 0);
-    $("kg_dashboard_left_widgets_container").hide();
+    $("#kg_dashboard_content").css("margin-left", 0);
+    $("#kg_dashboard_left_widgets_container").hide();
   }
  
  

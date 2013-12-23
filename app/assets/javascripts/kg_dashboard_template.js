@@ -2,6 +2,9 @@
 
 $(function(){
   
+  $.kg = {};
+  $.kg.dashboard = {};
+  
   $("#kg_dashboard_content .trigger_spinner_small").on("click", function(){
     $(this).closest("p").children(".spinner_small").css("display", "inline-block");
   });
@@ -21,5 +24,15 @@ $(function(){
     var popup = $("#"+$(this).attr("data-title_popup_id"));
     popup.hide();
   });
+ 
+  $.kg.dashboard.show_left_widgets = function(){
+    $("#kg_dashboard_content").css("margin-left", 300);
+    $("#kg_dashboard_left_widgets_container").show();
+  }
+  $.kg.dashboard.hide_left_widgets = function(){
+    $("#kg_dashboard_content").css("margin-left", 60);
+    $("#kg_dashboard_left_widgets_container").hide();
+  }
+ 
  
 });

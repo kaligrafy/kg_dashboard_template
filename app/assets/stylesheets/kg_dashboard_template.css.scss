@@ -15,7 +15,8 @@ canvas:hover { cursor: crosshair; }
 #kg_dashboard_top_menu { /*border-bottom: 1px solid rgba(255,255,255,0.2);*/ position: fixed; top: 0; width: 100%; z-index: 1000; /*box-shadow: 0 0 15px rgba(0,0,0,0.5);*/ font-size: 13px; height: 30px; }
 #kg_dashboard_footer { /*border-top: 1px solid rgba(255,255,255,0.2);*/ position: fixed; bottom: 0; z-index: 900;  width: 100%; /*box-shadow: 0 0 15px rgba(0,0,0,0.5);*/ font-size: 11px; }
 #kg_dashboard_top_menu, #kg_dashboard_footer { background: #11161A; font-weight: 100; color: rgba(195,205,221,0.5); }
-  #kg_dashboard_top_menu li, #kg_dashboard_footer li { padding: 7px 10px; height: 100%; display: inline-block; }
+  #kg_dashboard_top_menu ul { height: 30px; margin: 0; padding: 0; }
+  #kg_dashboard_top_menu li, #kg_dashboard_footer li { padding: 0 10px; height: 30px; overflow: hidden; margin: 0; border: none; vertical-align: middle; display: table-cell; }
   #kg_dashboard_top_menu ul.menu_left li { border-right: 1px solid rgba(255,255,255,0.15); }
   #kg_dashboard_top_menu ul.menu_right li { border-left: 1px solid rgba(255,255,255,0.15); }
   #kg_dashboard_top_menu li.last { border-right: none; }
